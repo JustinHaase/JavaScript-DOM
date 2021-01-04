@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+    <img id="myImg" src="kamaji.jpg" alt="Kamaji the boiler man" style='border-radius: 50%'>
+    <button type="button" onclick="myFunction()">Hide/Show Kamaji</button>
     <script>
-       document.write("<p style='font-size: 40px ; color: purple' , font-color: purple'>Developers for life</p>");  
+       document.write("<p style='font-size: 40px ; color: purple' ; font-color: purple; text-align: center'>Developers for life!</p>");  
     </script>
 
     <script>
         document.write("<p>We are coders!</p>");
+    </script>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myImg");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+        x.style.display = "none";
+  }
+}
     </script>
 
 </body>
